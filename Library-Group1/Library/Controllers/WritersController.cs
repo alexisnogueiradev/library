@@ -22,7 +22,7 @@ namespace Library.Controllers
         // GET: Writers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Persons.ToListAsync());
+            return View(await _context.Writers.ToListAsync());
         }
 
         // GET: Writers/Details/5
@@ -33,14 +33,14 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Persons
+            var writer = await _context.Writers
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (person == null)
+            if (writer == null)
             {
                 return NotFound();
             }
 
-            return View(person);
+            return View(writer);
         }
 
         // GET: Writers/Create
@@ -54,15 +54,15 @@ namespace Library.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LastName,FirstName,Mail,PhoneNumber,Id")] Person person)
+        public async Task<IActionResult> Create([Bind("Rank,LastName,FirstName,Mail,PhoneNumber,Id")] Writer writer)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(person);
+                _context.Add(writer);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(person);
+            return View(writer);
         }
 
         // GET: Writers/Edit/5
@@ -73,12 +73,12 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Persons.FindAsync(id);
-            if (person == null)
+            var writer = await _context.Writers.FindAsync(id);
+            if (writer == null)
             {
                 return NotFound();
             }
-            return View(person);
+            return View(writer);
         }
 
         // POST: Writers/Edit/5
@@ -86,9 +86,9 @@ namespace Library.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("LastName,FirstName,Mail,PhoneNumber,Id")] Person person)
+        public async Task<IActionResult> Edit(int id, [Bind("Rank,LastName,FirstName,Mail,PhoneNumber,Id")] Writer writer)
         {
-            if (id != person.Id)
+            if (id != writer.Id)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace Library.Controllers
             {
                 try
                 {
-                    _context.Update(person);
+                    _context.Update(writer);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PersonExists(person.Id))
+                    if (!WriterExists(writer.Id))
                     {
                         return NotFound();
                     }
@@ -113,7 +113,7 @@ namespace Library.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(person);
+            return View(writer);
         }
 
         // GET: Writers/Delete/5
@@ -124,14 +124,14 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Persons
+            var writer = await _context.Writers
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (person == null)
+            if (writer == null)
             {
                 return NotFound();
             }
 
-            return View(person);
+            return View(writer);
         }
 
         // POST: Writers/Delete/5
@@ -139,19 +139,19 @@ namespace Library.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var person = await _context.Persons.FindAsync(id);
-            if (person != null)
+            var writer = await _context.Writers.FindAsync(id);
+            if (writer != null)
             {
-                _context.Persons.Remove(person);
+                _context.Writers.Remove(writer);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PersonExists(int id)
+        private bool WriterExists(int id)
         {
-            return _context.Persons.Any(e => e.Id == id);
+            return _context.Writers.Any(e => e.Id == id);
         }
     }
 }
