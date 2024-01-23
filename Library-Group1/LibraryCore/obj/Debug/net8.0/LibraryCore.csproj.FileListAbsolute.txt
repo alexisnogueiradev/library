@@ -10,3 +10,15 @@ C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET 
 C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\refint\LibraryCore.dll
 C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.pdb
 C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\ref\LibraryCore.dll
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\bin\Debug\net8.0\LibraryCore.deps.json
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\bin\Debug\net8.0\LibraryCore.dll
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\bin\Debug\net8.0\LibraryCore.pdb
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.AssemblyInfoInputs.cache
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.AssemblyInfo.cs
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.sourcelink.json
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.dll
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\refint\LibraryCore.dll
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\LibraryCore.pdb
+C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryCore\obj\Debug\net8.0\ref\LibraryCore.dll
