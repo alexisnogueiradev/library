@@ -7,22 +7,24 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Library.Data;
 using Library.Entities;
+using LibraryCore.Interfaces;
 
 namespace Library.Controllers
 {
     public class WritersController : Controller
     {
-        private readonly LibraryContext _context;
+        private readonly IWriterRepository Repository;
 
-        public WritersController(LibraryContext context)
+        public WritersController(IWriterRepository repo)
         {
-            _context = context;
+            Repository = repo;
         }
+
 
         // GET: Writers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Writers.ToListAsync());
+            return View(await Repository.GetAll());
         }
 
         // GET: Writers/Details/5
@@ -33,8 +35,7 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var writer = await _context.Writers
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var writer = await Repository.GetById(id.Value);
             if (writer == null)
             {
                 return NotFound();
@@ -54,12 +55,11 @@ namespace Library.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Rank,LastName,FirstName,Mail,PhoneNumber,Id")] Writer writer)
+        public async Task<IActionResult> Create(Writer writer)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(writer);
-                await _context.SaveChangesAsync();
+                await Repository.Insert(writer);
                 return RedirectToAction(nameof(Index));
             }
             return View(writer);
@@ -73,7 +73,7 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var writer = await _context.Writers.FindAsync(id);
+            var writer = await Repository.GetById(id.Value);
             if (writer == null)
             {
                 return NotFound();
@@ -86,7 +86,7 @@ namespace Library.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Rank,LastName,FirstName,Mail,PhoneNumber,Id")] Writer writer)
+        public async Task<IActionResult> Edit(int id, Writer writer)
         {
             if (id != writer.Id)
             {
@@ -97,12 +97,12 @@ namespace Library.Controllers
             {
                 try
                 {
-                    _context.Update(writer);
-                    await _context.SaveChangesAsync();
+                    await Repository.Update(writer);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!WriterExists(writer.Id))
+                    bool test = await Repository.Exist(writer.Id);
+                    if (!test)
                     {
                         return NotFound();
                     }
@@ -124,8 +124,7 @@ namespace Library.Controllers
                 return NotFound();
             }
 
-            var writer = await _context.Writers
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var writer = await Repository.GetById(id.Value);
             if (writer == null)
             {
                 return NotFound();
@@ -139,19 +138,13 @@ namespace Library.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var writer = await _context.Writers.FindAsync(id);
+            var writer = await Repository.GetById(id);
             if (writer != null)
             {
-                _context.Writers.Remove(writer);
+                await Repository.Delete(writer);
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool WriterExists(int id)
-        {
-            return _context.Writers.Any(e => e.Id == id);
-        }
     }
 }
