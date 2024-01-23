@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryInfrastructure.Data.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20240123093720_CreateDb")]
+    [Migration("20240123142439_CreateDb")]
     partial class CreateDb
     {
         /// <inheritdoc />
@@ -151,13 +151,16 @@ namespace LibraryInfrastructure.Data.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
 
                     b.Property<string>("Mail")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
