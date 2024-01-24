@@ -106,6 +106,32 @@ namespace LibraryInfrastructure.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Domains");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Romans francophones.",
+                            Name = "Littérature française"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Apprendre à utiliser les Outils Bureautique, à créer un site Web, à programmer ou à comprendre le Bitcoin.",
+                            Name = "Informatique"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Genre policier qui se distinguent par la mise en scène d’une énigme policière.",
+                            Name = "Polar"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Relate des événements totalement étranges, le plus souvent irrationnels ou incompréhensibles par l'humain.",
+                            Name = "Fantastique"
+                        });
                 });
 
             modelBuilder.Entity("Library.Entities.Loan", b =>

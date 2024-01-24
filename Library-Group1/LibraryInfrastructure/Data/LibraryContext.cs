@@ -39,6 +39,7 @@ namespace Library.Data
             modelBuilder.Entity<Book>().Property(b => b.Title).IsRequired();
 
             modelBuilder.Entity<Loan>().Property(b => b.StartDate).IsRequired();
+
         }
     }
 }

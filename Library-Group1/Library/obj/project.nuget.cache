@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vj+fDy36djQlnm0jkVMv34PUEZhYHnlZxbRM8B3AV2DnJcA2/TjzOe7ZT/XgCLhWRCHeF+zivZIz9+69oEtxWQ==",
+  "dgSpecHash": "EuVqvJFuqjLppWMRbuVnQtwtm2Xp20s/aDVlWpgSFjEegLHtphWs0av+NjurSjH3T5c8QVlZOwvYvMDm9xSmXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\Library\\Library.csproj",
+  "projectFilePath": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\Library\\Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
