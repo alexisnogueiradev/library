@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Folders net8.0
+Library-Group1/Library/obj/Debug/net8.0
+Library-Group1/LibraryCore/obj/Debug/net8.0
+Library-Group1/LibraryInfrastucture/obj/Debug/net8.0
+
 # User-specific files
 *.rsuser
 *.suo
