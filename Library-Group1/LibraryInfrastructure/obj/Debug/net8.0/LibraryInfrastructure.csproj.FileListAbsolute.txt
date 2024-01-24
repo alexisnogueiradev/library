@@ -30,3 +30,19 @@ C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryI
 C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\refint\LibraryInfrastructure.dll
 C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.pdb
 C:\Users\Administrateur\Documents\Library\library-group1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\ref\LibraryInfrastructure.dll
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\bin\Debug\net8.0\LibraryInfrastructure.deps.json
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\bin\Debug\net8.0\LibraryInfrastructure.dll
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\bin\Debug\net8.0\LibraryInfrastructure.pdb
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\bin\Debug\net8.0\LibraryCore.dll
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\bin\Debug\net8.0\LibraryCore.pdb
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.csproj.AssemblyReference.cache
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.AssemblyInfoInputs.cache
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.AssemblyInfo.cs
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.sourcelink.json
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.csproj.CopyComplete
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.dll
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\refint\LibraryInfrastructure.dll
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\LibraryInfrastructure.pdb
+C:\Users\nogue\OneDrive\Documents\Programmation\Projet Fil Rouge formation .NET M2i\LibraryGroup1\Library-Group1\LibraryInfrastructure\obj\Debug\net8.0\ref\LibraryInfrastructure.dll
