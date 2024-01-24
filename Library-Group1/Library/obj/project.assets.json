@@ -8866,11 +8866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\Library\\obj\\",
+      "outputPath": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8891,11 +8891,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\LibraryCore\\LibraryCore.csproj": {
-              "projectPath": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\LibraryCore\\LibraryCore.csproj"
+            "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\LibraryCore\\LibraryCore.csproj": {
+              "projectPath": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\LibraryCore\\LibraryCore.csproj"
             },
-            "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\LibraryInfrastructure\\LibraryInfrastructure.csproj": {
-              "projectPath": "C:\\Users\\Administrateur\\Documents\\Library\\library-group1\\Library-Group1\\LibraryInfrastructure\\LibraryInfrastructure.csproj"
+            "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\LibraryInfrastructure\\LibraryInfrastructure.csproj": {
+              "projectPath": "C:\\Users\\Administrateur\\Documents\\projet-fil-rouge\\mvc\\library-group1\\Library-Group1\\LibraryInfrastructure\\LibraryInfrastructure.csproj"
             }
           }
         }
